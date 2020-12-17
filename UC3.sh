@@ -32,15 +32,15 @@ Options()
    do
       diceNumber=$((RANDOM%6+1))
       option=$((RANDOM%3))
-      if [ $option -eq 0 ]
+      if [ $option -eq $noPlay ]
       then
          echo NoPlay
          echo $diceNumber
-      elif [ $option -eq 1 ]
+      elif [ $option -eq $ladder ]
       then
          sum=$(($diceNumber+$sum))  
          echo Player moves front to position: $sum   
-      elif [ $option -eq 2 ]
+      elif [ $option -eq $snake ]
       then 
          sum=$(($diceNumber-$sum))
          echo Player moves back to position: $sum
