@@ -2,9 +2,9 @@
 
 numberofplayer=1
 
-dicenumber()
+diceNumber()
 {
-   dicenumber=$((RANDOM%6+1))
-   echo Player gets a dice number: $dicenumber
+   diceNumber=$((RANDOM%6+1))
+   echo Player gets a dice number: $diceNumber
 }
-dicenumber
+diceNumber
