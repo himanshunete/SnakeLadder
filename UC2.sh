@@ -1,6 +1,6 @@
 #!/bin/bash/ -x
 
-numberofplayer=1
+numberOfPlayer=1
 
 diceNumber()
 {
