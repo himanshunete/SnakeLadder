@@ -13,9 +13,9 @@ Playerposition()
 
 Playerposition
 
-noPlay=0
-ladder=1
-snake=2
+Noplay=0
+Ladder=1
+Snake=2
 sum=0
 Options()
 {  
@@ -23,15 +23,15 @@ Options()
    do
       diceNumber=$((RANDOM%6+1))
       option=$((RANDOM%3))
-      if [ $option -eq $noPlay ]
+      if [ $option -eq $Noplay ]
       then
          echo NoPlay
          echo $diceNumber
-      elif [ $option -eq $ladder ]
+      elif [ $option -eq $Ladder ]
       then
          sum=$(($diceNumber+$sum))  
          echo Player moves front to position: $sum   
-      elif [ $option -eq $snake ]
+      elif [ $option -eq $Snake ]
       then 
          sum=$(($diceNumber-$sum))
          if [ $sum -lt	 0 ]
