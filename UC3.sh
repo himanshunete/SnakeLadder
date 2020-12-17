@@ -43,7 +43,7 @@ Options()
       elif [ $option -eq $snake ]
       then 
          sum=$(($diceNumber-$sum))
-         if [ $sum -le 0 ]
+         if [ $sum -lt	 0 ]
          then
             exit
          fi
