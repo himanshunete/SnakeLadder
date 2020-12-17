@@ -1,6 +1,6 @@
 #!/bin/bash/ -x
 
-numberofplayer=0
+numberofplayer=1
 
 dicenumber()
 {
