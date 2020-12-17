@@ -1,4 +1,4 @@
 #!/bin/bash/ -x
 
-DiceNumber=$((RANDOM%6+1))
-echo Player gets a Dice Number: $DiceNumber
+dice_number=$((RANDOM%6+1))
+echo Player gets a dice number: $dice_number
