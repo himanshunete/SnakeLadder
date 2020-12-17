@@ -43,6 +43,10 @@ Options()
       elif [ $option -eq $snake ]
       then 
          sum=$(($diceNumber-$sum))
+         if [ $sum -le 0 ]
+         then
+            exit
+         fi
          echo Player moves back to position: $sum
       fi
    done 
