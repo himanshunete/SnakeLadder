@@ -38,12 +38,12 @@ Options()
          echo $diceNumber
       elif [ $option -eq 1 ]
       then
-         diceNumber=$(($diceNumber+$sum))  
-         echo Player moves front to position: $diceNumber   
+         sum=$(($diceNumber+$sum))  
+         echo Player moves front to position: $sum   
       elif [ $option -eq 2 ]
       then 
-         diceNumber=$(($diceNumber-$sum))
-         echo Player moves back to position: $diceNumber
+         sum=$(($diceNumber-$sum))
+         echo Player moves back to position: $sum
       fi
    done 
 }
